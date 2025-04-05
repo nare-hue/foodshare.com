@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - Food Share </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+
+        .sec {
+            width: 100%;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        header .logo {
+            height: 60px;
+        }
+
+        header ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            position: relative;
+            padding-bottom: 5px;
+            transition: color 0.3s ease;
+        }
+
+        header ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #ffffff;
+            left: 0;
+            bottom: 0;
+            transition: width 0.3s ease;
+        }
+
+        header ul li a:hover {
+            color: #ffffff;
+        }
+
+        header ul li a:hover::after {
+            width: 100%;
+        }
+
+        .how-section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+            background-color: #111;
+            border-radius: 20px;
+        }
+
+        .how-section h1 {
+            font-size: 3em;
+            margin-bottom: 40px;
+        }
+
+        .how-section ul {
+            text-align: left;
+            list-style-type: disc;
+            margin: 0 auto;
+            padding-left: 40px;
+            max-width: 700px;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="index.html"><img src="logo.jpg" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="how.html">How it works</a></li>
+                <li><a href="goals.html">Goals</a></li>
+                <li><a href="tech.html">Tech</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+
+        <main>
+            <section class="how-section">
+                <h1><b>How It Works</b></h1>
+                <ul>
+                    <li><b>Donate Leftover Food:</b> Simply sign up, log your leftovers, and we take care of the rest. Our volunteers ensure safe and timely pickup from your doorstep.</li>
+                    <li><b>Earn Points:</b> Each donation is rewarded with points you can redeem for merchandise, discount coupons, </li>
+                    <li><b>Our Trusted Network:</b> We collaborate with NGOs, shelters, restaurants, and local businesses to ensure the food reaches those in need efficiently.</li>
+                    <li><b>Impact Tracking:</b> View your contribution stats and see how many lives you've helped impact through your dashboard.</li>
+                    <li><b>Simple & Safe:</b> We follow food safety protocols and make the entire process smooth and secure for both donors and recipients.</li>
+                </ul>
+            </section>
+        </main>
+    </section>
+</body>
+</html>
+
+

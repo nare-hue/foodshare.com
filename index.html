@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Share - Nourishing the Community</title>
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .sec {
+            width: 100%;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        header .logo {
+            height: 60px;
+        }
+
+        header ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            position: relative;
+            padding-bottom: 5px;
+            transition: color 0.3s ease;
+        }
+
+        header ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #ffffff;
+            left: 0;
+            bottom: 0;
+            transition: width 0.3s ease;
+        }
+
+        header ul li a:hover {
+            color: #ffffff;
+        }
+
+        header ul li a:hover::after {
+            width: 100%;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #ccc;
+            line-height: 1.8;
+        }
+
+        .hero .btn {
+            margin-top: 30px;
+            padding: 12px 30px;
+            background-color: #ffffff;
+            color: #000;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero .btn:hover {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="index.html"><img src="logo.jpg" class="logo" alt="Food Share Logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="how.html">How it works</a></li>
+                <li><a href="goals.html">Goals</a></li>
+                <li><a href="tech.html">Tech</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="hero">
+            <h1>Welcome to Food Share</h1>
+            <p>
+                Food Share collaborates with local restaurants and community members to donate food to those in need.
+                By contributing, you help support others while earning rewards and points. Together, we make a positive
+                impact, creating a cycle of generosity that benefits both donors and recipients in the community.
+            </p>
+            <button class="btn" onclick="location.href='how.html'">Learn More</button>
+        </div>
+    </section>
+</body>
+</html>
